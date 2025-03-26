@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:9000";
+const BASE_URL = "https://configuration-seven.vercel.app/";
 
 const handleResponse = async (response: Response) => {
   if (!response.ok) {
