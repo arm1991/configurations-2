@@ -1,11 +1,7 @@
-import UserManagement from "./components/UserManagement";
+import Router from '@/router/route';
 
 function App() {
-  return (
-    <div className="App">
-      <UserManagement />
-    </div>
-  );
+  return <Router />;
 }
 
 export default App;
