@@ -1,16 +1,19 @@
 import { useContext, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+
 import { logout } from '@/store/thunks/authThunks';
 import { getInitialsFromFullName } from '@/helpers';
 import { authSelector, isAuth } from '@/store/slices/auth.slice';
 import { AuthDialogContext } from '@/contexts/AuthDialogContext';
+
 import Title from '@/components/UI/Title';
 import TwiiterIcon from '@/components/UI/TwitterIcon';
 import UserIcon from '@/components/UI/UserIcon';
 import LogOutDialog from '@/components/UI/Dialogs/LogOutDialog';
 
 import type { AppDispatch } from '@/store/types';
+
 import './styles.scss';
 
 function Header() {

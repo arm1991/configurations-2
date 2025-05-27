@@ -4,9 +4,11 @@ import { authSelector, isAuth } from '@/store/slices/auth.slice';
 import { addTweet } from '@/store/thunks/tweetsThunks';
 import { getRandomId } from '@/helpers';
 import { AuthDialogContext } from '@/contexts/AuthDialogContext';
+
 import PrimaryButton from '@/components/UI/PrimaryButton';
 
 import type { AppDispatch } from '@/store/types';
+
 import './styles.scss';
 
 function SectionOne() {

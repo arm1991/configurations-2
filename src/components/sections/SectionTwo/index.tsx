@@ -1,4 +1,5 @@
 import Tweet from '@/components/UI/Tweet';
+
 import type { ITweet } from '@/interfaces/tweet';
 
 import './styles.scss';

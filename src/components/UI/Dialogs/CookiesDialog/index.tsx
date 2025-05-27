@@ -1,9 +1,11 @@
 import { useContext, useEffect, useState } from 'react';
+
 import { CookiesContext } from '@/contexts/CookiesContext';
 
+import PrimaryButton from '@/components/UI/PrimaryButton';
+import SecondaryButton from '@/components/UI/SecondaryButton';
+
 import DialogWrapper from '../DialogWrapper';
-import PrimaryButton from '../../PrimaryButton';
-import SecondaryButton from '../../SecondaryButton';
 
 import './styles.scss';
 

@@ -1,8 +1,9 @@
 import { isAxiosError } from 'axios';
 import { setError } from '@/store/slices/error.slice';
 import { setTweets } from '@/store/slices/tweets.slice';
-import TweetService from '@/services/TweetService';
 import { filterTweetsByUserId } from '@/helpers';
+
+import TweetService from '@/services/TweetService';
 
 import type { ITweet } from '@/interfaces/tweet';
 import type { AppDispatch } from '../types';

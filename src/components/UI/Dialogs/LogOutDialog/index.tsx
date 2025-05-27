@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
+
 import PrimaryButton from '@/components/UI/PrimaryButton';
 import DialogWrapper from '../DialogWrapper';
+
 import './styles.scss';
 
 interface LogOutDialogProps {

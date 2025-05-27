@@ -6,11 +6,10 @@ import Router from '@/router';
 import { CookiesContext } from '@/contexts/CookiesContext';
 import { AppDispatch } from '@/store/types';
 import { loginWithId } from '@/store/thunks/authThunks';
-import { getTweets } from '@/store/thunks/tweetsThunks';
+import { authSelector } from '@/store/slices/auth.slice';
 import { getAuthCookies, getUserCookies } from '@/utils/cookies';
 
 import './index.scss';
-import { authSelector } from './store/slices/auth.slice';
 
 function App() {
   const location = useLocation();

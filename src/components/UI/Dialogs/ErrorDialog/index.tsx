@@ -1,4 +1,5 @@
 import DialogWrapper from '../DialogWrapper';
+
 import './styles.scss';
 
 interface ErrorDialogArgs {
