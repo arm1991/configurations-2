@@ -10,14 +10,14 @@ export function buildWebpack(options: BuildOptions): webpack.Configuration {
   const isDev = options.mode === 'development';
 
   return {
-    mode: mode,
+    mode,
     entry: paths.entry,
     plugins: buildPlugins(options),
     module: { rules: buildLoaders(options) },
     resolve: buildResolver(options),
     output: {
       path: paths.output,
-      filename: ' [name].[contenthash].js',
+      filename: '[name].[contenthash].js',
       clean: true,
     },
     devtool: isDev ? 'inline-source-map' : false,

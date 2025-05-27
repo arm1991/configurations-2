@@ -20,6 +20,18 @@ export function buildPlugins(options: BuildOptions): Configuration['plugins'] {
     );
   }
 
+  plugins.push(
+    new webpack.DefinePlugin({
+      'process.env.AUTH_COOKIES': JSON.stringify(process.env.AUTH_COOKIES),
+      'process.env.USER_COOKIES': JSON.stringify(process.env.USER_COOKIES),
+      'process.env.CLIENT_URL': JSON.stringify(process.env.CLIENT_URL),
+      'process.env.SERVER_URL': JSON.stringify(process.env.SERVER_URL),
+      'process.env.BUILD_MODE': JSON.stringify(process.env.BUILD_MODE),
+      'process.env.PORT': JSON.stringify(process.env.PORT),
+      // add more env vars as needed
+    }),
+  )
+
   if (isDev) {
     plugins.push(new webpack.ProgressPlugin());
   }

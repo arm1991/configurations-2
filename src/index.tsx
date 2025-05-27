@@ -1,7 +1,12 @@
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { CookiesProvider } from '@/contexts/CookiesContext';
+
 import App from '@/App';
-import '@/styles/index.scss';
+import store from '@/store/store';
+
+import './index.scss';
 
 const root = document.getElementById('root');
 
@@ -13,6 +18,10 @@ const container = createRoot(root);
 
 container.render(
   <BrowserRouter>
-    <App />
+    <Provider store={store}>
+      <CookiesProvider>
+        <App />
+      </CookiesProvider>
+    </Provider>
   </BrowserRouter>,
 );

@@ -13,10 +13,11 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    // "verbatimModuleSyntax": true,
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": { "@/*": ["./src/*"] }
   },
   "ts-node": { "compilerOptions": { "module": "CommonJS" } },
-  "include": ["src"]
+  "include": ["src", "webpack.config.ts", ".eslintrc.js"]
 }
